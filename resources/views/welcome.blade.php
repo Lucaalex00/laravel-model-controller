@@ -22,13 +22,13 @@
             @forelse ($movies as $movie)
                 <div class="col">
                     <div class="card bg-light p-3 position-relative">
-                        <h6 class="position-absolute top-0 end-0"> {{ $movie->id }}.</h6>
+                        <h6 class="index_movie position-absolute top-0 end-0 p-3"> {{ $movie->id }}.</h6>
                         <div class="card_title">
                             <h3>{{ $movie->title }}</h3>
                             <h6>"{{ $movie->original_title }}"</h6>
                         </div>
                         <div class="card_body">
-                            <img src="https://picsum.photos/200" alt="">
+                            <img class="img_movie" src="https://picsum.photos/200" alt="">
                             <div>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione
                                     ad optio quod
