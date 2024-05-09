@@ -25,7 +25,7 @@
                         <h6 class="index_movie position-absolute top-0 end-0 p-3"> {{ $movie->id }}.</h6>
                         <div class="card_title">
                             <h3>{{ $movie->title }}</h3>
-                            <h6>"{{ $movie->original_title }}"</h6>
+                            <h6 class="text-secondary">"{{ $movie->original_title }}"</h6>
                         </div>
                         <div class="card_body">
                             <img class="img_movie" src="https://picsum.photos/200" alt="">
@@ -38,12 +38,12 @@
                                     veritatis architecto, pariatur blanditiis sunt officia ea sequi unde accusamus
                                     eligendi doloremque accusantium minus.
                                 </p>
-                                <strong>{{ $movie->nationality }}</strong>
+                                <strong>{{ $movie->nationality }} (&#x1f1fa;&#x1f1f8;)</strong>
                             </div>
                         </div>
                         <div class="card_footer text-end">
                             <div>Release date : <strong>{{ $movie->date }}</strong></div>
-                            <div>Vote : <strong>{{ $movie->vote }}</strong></div>
+                            <div>Vote : <strong>{{ $movie->vote }} <i class="text-warning">&#9734;</i></strong></div>
                         </div>
                     </div>
                 </div>
